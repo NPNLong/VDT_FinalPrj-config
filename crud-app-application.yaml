@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/npnlong/VDT_FinalPrj-config.git
+    repoURL: https://github.com/npnlong/VDT_FinalPrj.git
     targetRevision: HEAD
-    path: crud-app
+    path: helm-chart
     helm:
       valueFiles:
-        - values.yaml
+        - https://raw.githubusercontent.com/npnlong/VDT_FinalPrj-config/HEAD/crud-app/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: default
